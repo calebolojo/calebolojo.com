@@ -6,7 +6,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        primary: ['Inter', ...defaultTheme.fontFamily.sans],
+        primary: [
+          'var(--font-plusjakartasans)',
+          ...defaultTheme.fontFamily.sans,
+        ],
       },
       colors: {
         primary: {

@@ -1,0 +1,24 @@
+.home-hero {
+  height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  &-container {
+    .home-hero-wrap {
+      width: 100%;
+      max-width: 1024px;
+      h1 {
+        font-size: 90px;
+        line-height: 96px;
+        letter-spacing: -2.25px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 28px;
+        color: #cccccc;
+        font-weight: 200 !important;
+        letter-spacing: -0.01px;
+        padding-right: 240px;
+      }
+    }
+  }
+}
