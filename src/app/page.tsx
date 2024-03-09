@@ -32,11 +32,9 @@ export default function HomePage() {
             <p className='font-300 font-light text-white'>
               Hi! I'm Caleb, a full stack engineer proficient in designing and
               implementing scalable, secure, and high-performance applications
-              across multiple cloud platforms. Adept at leveraging cutting-edge
-              technologies to streamline development processes, enhance system
-              reliability, and improve overall efficiency. Proven expertise in
-              collaborating with cross-functional teams to deliver innovative
-              solutions aligned with business objectives.
+              on AWS Cloud Services. Proven expertise in collaborating with
+              cross-functional teams to deliver innovative solutions aligned
+              with business objectives.
             </p>
           </div>
         </div>
