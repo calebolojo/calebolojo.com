@@ -3,6 +3,8 @@ import React from 'react';
 
 import './Header.scss';
 
+import { NavLink } from '../../app/components/NavLink/NavLink';
+
 const Header = () => {
   return (
     <header className='header'>
@@ -13,19 +15,19 @@ const Header = () => {
         <nav className='header-nav'>
           <ul>
             <li>
-              <Link href='/'>Home</Link>
+              <NavLink exact={true} href='/'>Home</NavLink>
             </li>
             <li>
               <Link href='/'>Resume</Link>
             </li>
             <li>
-              <Link href='/'>Blog</Link>
+              <NavLink exact={true} href='/blog'>Blog</NavLink>
             </li>
             <li>
-              <Link href='/'>Projects</Link>
+              <NavLink exact={true} href='/projects'>Projects</NavLink>
             </li>
             <li>
-              <Link href='/'>Playground</Link>
+              <NavLink exact={true} href='/playground'>Playground</NavLink>
             </li>
             <li>
               <Link className='button btn-outline btn-outline-white' href='#'>
