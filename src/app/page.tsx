@@ -25,7 +25,7 @@ export default function HomePage() {
       <section className='home-hero'>
         <div className='home-hero-container container relative mx-auto'>
           <div className='home-hero-wrap'>
-            <p className='intro pb-[60px] font-semibold uppercase text-white'>
+            <p className='intro font-bold uppercase text-white'>
               Hello. I'm Caleb Olojo
             </p>
             <h1 className='font-primary pb-6 font-semibold text-white'>
@@ -34,7 +34,7 @@ export default function HomePage() {
               <br />
               Cloud Infrastructure.
             </h1>
-            <p className='copy font-300 pt-6 font-light text-white'>
+            <p className='copy font-300 font-light text-white'>
               A Senior Software Engineer proficient in designing and
               implementing scalable, secure, and high-performance applications
               on AWS Cloud Services. Proven expertise in collaborating with
