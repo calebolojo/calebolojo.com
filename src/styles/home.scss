@@ -1,23 +1,33 @@
 .home-hero {
   height: calc(100vh - 70px);
-  display: flex;
-  align-items: center;
+
   &-container {
+    height: 100%;
+    padding: 0 140px;
     .home-hero-wrap {
       width: 100%;
-      max-width: 1024px;
-      h1 {
-        font-size: 90px;
-        line-height: 96px;
-        letter-spacing: -2.25px;
+      height: 100%;
+      max-width: 1180px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .intro {
+        font-size: 14px;
+        letter-spacing: 2.5px;
+        color: #c6c6c6;
       }
-      p {
-        font-size: 24px;
-        line-height: 38px;
+      h1 {
+        font-size: 74px;
+        line-height: 78px;
+        letter-spacing: -1.2px;
+      }
+      .copy {
+        font-size: 18px;
+        line-height: 32px;
         color: #cccccc;
         font-weight: 200 !important;
         letter-spacing: 0.3px;
-        padding-right: 8px;
+        padding-right: 450px;
       }
     }
   }

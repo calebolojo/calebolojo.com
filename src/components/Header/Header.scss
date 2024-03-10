@@ -11,13 +11,16 @@
     ul {
       display: flex;
       align-items: center;
-      gap: 24px;
+      gap: 30px;
       color: #999999;
       li {
         display: inline-flex;
         font-size: 16px;
         line-height: 16px;
-        color: #999999;
+        a {
+          color: #999999;
+          font-weight: 300 !important;
+        }
       }
     }
   }
