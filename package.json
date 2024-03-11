@@ -1,6 +1,6 @@
 {
   "name": "ts-nextjs-tailwind-starter",
-  "version": "0.0.6c",
+  "version": "0.0.6d",
   "private": true,
   "scripts": {
     "dev": "next dev",

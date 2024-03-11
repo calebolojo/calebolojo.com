@@ -38,8 +38,7 @@ export default function HomePage() {
               A Senior Software Engineer proficient in designing and
               implementing scalable, secure, and high-performance applications
               on AWS Cloud Services. Proven expertise in collaborating with
-              cross-functional teams to deliver innovative solutions aligned
-              with business objectives.
+              cross-functional teams to deliver innovative solutions.
             </p>
           </div>
           <div>
