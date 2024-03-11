@@ -93,7 +93,7 @@ body {
 
 .button {
   border-radius: 3px;
-  padding: 10px 14px;
+  padding: 10px 12px;
   &.btn-outline {
     background-color: transparent;
     border: 1px solid !important;
