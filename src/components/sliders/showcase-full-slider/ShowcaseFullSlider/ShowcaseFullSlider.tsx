@@ -1,8 +1,8 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import { GoArrowLeft, GoArrowRight } from 'react-icons/go';
 import styled from 'styled-components';
 import { FreeMode, Pagination } from 'swiper/modules';
-import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -35,7 +35,7 @@ const ShowcaseSlider = ({
       <Swiper
         spaceBetween={30}
         onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => {
+        onSwiper={(swiper: any) => {
           // @ts-ignore
           swiperRef.current = swiper;
         }}

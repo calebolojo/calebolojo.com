@@ -1,22 +1,11 @@
 'use client';
 import { Tab, Tabs } from '@nextui-org/tabs';
-import { motion } from 'framer-motion';
-import React, { useMemo } from 'react';
+import React from 'react';
 
-import { showcase_projects } from '@/data/projects';
+import { TabContent } from '@/components/work-page-components/work-tab-content';
 
-import ProjectCard from '@/components/cards/project-card/ProjectCard';
-
-export const WorkPage = () => {
+export default function WorkPage() {
   const limit = 6;
-
-  const filtered_works = useMemo(
-    () =>
-      showcase_projects
-        .filter((each) => !each.isFeaturedInHomePage)
-        .slice(0, limit),
-    [],
-  );
 
   return (
     <main>
@@ -77,47 +66,4 @@ export const WorkPage = () => {
       </section>
     </main>
   );
-};
-
-export default WorkPage;
-
-interface TabContentProps {
-  category?: string;
-  perPage?: number;
 }
-const TabContent = ({ category, perPage = 6 }: TabContentProps) => {
-  const filtered_works = useMemo(
-    () =>
-      showcase_projects
-        .filter((each) => !each.isFeaturedInHomePage)
-        .slice(0, perPage),
-    // showcase_projects
-    // .filter(
-    //   (each) =>
-    //     !each.isFeaturedInHomePage ||
-    //     each.category?.includes(category as string),
-    // )
-    // .slice(0, perPage),
-    [perPage],
-  );
-
-  return (
-    <div className='grid grid-cols-1 lg:grid-cols-2 gap-x-10 gap-y-space-80 w-full'>
-      {filtered_works.map((each, i) => (
-        <motion.div key={each.id} className='w-full'>
-          <ProjectCard
-            featuredImageSrc={each.fullscreenFeaturedGif}
-            featuredGifSrc={each.fullscreenFeaturedGif}
-            useGif
-            description={(each.description as string).substring(0, 80) + '...'}
-            tags={each.highlightTags}
-            title={each.title}
-            variant='card'
-            ctaBtnText='See Project'
-            href=''
-          />
-        </motion.div>
-      ))}
-    </div>
-  );
-};
