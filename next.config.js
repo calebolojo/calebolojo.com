@@ -2,6 +2,7 @@
 const nextConfig = {
   eslint: {
     dirs: ['src'],
+    quiet: true,
   },
 
   reactStrictMode: true,

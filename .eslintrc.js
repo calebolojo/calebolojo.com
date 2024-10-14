@@ -13,6 +13,9 @@ module.exports = {
     'prettier',
   ],
   rules: {
+    '@typescript-eslint/ban-ts-ignore': 'off',
+    '@typescript-eslint/ban-ts-comment': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
     'no-unused-vars': 'off',
     'no-console': 'warn',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
@@ -23,8 +26,7 @@ module.exports = {
       'warn',
       { props: 'never', children: 'never' },
     ],
-
-    //#region  //*=========== Unused Import ===========
+    //#region //*=========== Unused Import ===========
     '@typescript-eslint/no-unused-vars': 'off',
     'unused-imports/no-unused-imports': 'warn',
     'unused-imports/no-unused-vars': [
@@ -37,7 +39,6 @@ module.exports = {
       },
     ],
     //#endregion  //*======== Unused Import ===========
-
     //#region  //*=========== Import Sort ===========
     'simple-import-sort/exports': 'warn',
     'simple-import-sort/imports': [

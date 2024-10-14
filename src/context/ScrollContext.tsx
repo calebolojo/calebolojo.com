@@ -1,5 +1,5 @@
-import { useEffect, useState, createContext, useContext } from 'react';
 import Lenis from 'lenis';
+import { createContext, useContext, useEffect, useState } from 'react';
 
 const SmoothScrollerContext = createContext(null);
 
@@ -18,6 +18,8 @@ export default function ScrollContext({ children }: any) {
       requestAnimationFrame(raf);
     }
 
+    // @ts-ignore
+    // eslint-disable-next-line prefer-const
     rf = requestAnimationFrame(raf);
     setRaf(rf);
     setLenis(scroller);
